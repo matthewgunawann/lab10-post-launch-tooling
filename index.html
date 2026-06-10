@@ -8,6 +8,15 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <title>Lab 10 - Return of the Party Horn</title>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QJ7TXKK840"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QJ7TXKK840');
+  </script>
+ 
   <!-- JS Confetti -->
   <script src="assets/scripts/js-confetti.browser.js"></script>
 
@@ -42,6 +51,16 @@
       <audio class="hidden" src=""></audio>
     </section>
   </main>
+  
+  <script>
+    const randomNumber = Math.random();
+    const shouldApplyClass = randomNumber < 0.5;
+    let body = document.querySelector('body');
+    if (shouldApplyClass) {
+      body.classList.add('blue');
+    }
+  </script>
+
 </body>
 
 </html>
